@@ -10,6 +10,7 @@ public class EntryExercises {
             Integer x = reader.nextInt();
             myList.add(x);
         }
+        
         System.out.println("The sum of your numbers is:" + getSum(myList));
         System.out.println("The product of your numbers is:" + getProd(myList));
         System.out.println("The max of your numbers is:" + findMax(myList));
@@ -33,10 +34,7 @@ public class EntryExercises {
             System.out.println("Sorry, we don't have any" + x + "s");
 
         }
-
-
-
-
+        
     }
     //List Helper Methods
     public static int getSum(ArrayList<Integer> x){
@@ -46,6 +44,7 @@ public class EntryExercises {
         }
         return sum;
     }
+    
     public static int getProd(ArrayList<Integer> x){
         int prod = 1;
         for(Integer i:x){
@@ -53,6 +52,7 @@ public class EntryExercises {
         }
         return prod;
     }
+    
     public static int findMax(ArrayList<Integer>x){
         int currentMax = x.get(0);
         for(int i = 1; i<x.size();i++){
@@ -62,6 +62,7 @@ public class EntryExercises {
         }
         return currentMax;
     }
+    
     public static int findMin(ArrayList<Integer>x){
         int currentMin = x.get(0);
         for(int i = 1; i<x.size();i++){
